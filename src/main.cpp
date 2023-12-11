@@ -25,6 +25,15 @@ void setup()
 
     cilent.RequestGET(url, response);
     Serial.println(response);       //Sẽ in ra message: welcome.
+    delay(5000);
+
+    cilent.CreateCard("12345678", response);  //Gửi request tạo RFID trống.
+    Serial.println(response); 
+    delay(5000);
+
+    cilent.Action("12345678", "86B-123456", response); //Gửi request ra vào.
+    Serial.println(response); 
+    delay(5000);
   }
 }
 
