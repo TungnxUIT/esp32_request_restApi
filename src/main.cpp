@@ -24,7 +24,7 @@ void setup()
     strcat(url, endpoint);
 
     cilent.RequestGET(url, response);
-    Serial.println(response);
+    Serial.println(response);       //Sẽ in ra message: welcome.
   }
 }
 

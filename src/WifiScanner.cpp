@@ -62,7 +62,7 @@ void WiFiScanner::connectWifi(const char* ssid, const char* password) {
   }
 
   if (WiFi.status() == WL_CONNECTED) {
-    Serial.println("Connected to WiFi");
+    Serial.println("Connected to WiFi Successfully");
     setConnected(true);
   } else {
     Serial.println("Failed to connect to WiFi");
